@@ -1,0 +1,42 @@
+2014-10-11 19:52:24 - #<UNIXSocket:0x007ffc6c32cce0>.recv_io:#<IO:0x007ffc6dde3890>(logged from #<RoCells::Trace::LastFrame:0x007ffc6de1eda0>)
+2014-10-11 19:52:24 - redirect $stdout to #<IO:0x007ffc6dde3890>(logged from #<RoCells::Trace::LastFrame:0x007ffc2c49a450>)
+2014-10-11 19:52:25 - kill 16275 at 2014-10-11 19:52:24 +0800(logged from #<RoCells::Trace::LastFrame:0x007ffc2c502cf8>)
+2014-10-11 21:00:51 - accept request #<UNIXSocket:0x007ffc6bb22ef0>(logged from #<RoCells::Trace::LastFrame:0x007ffc6bb289b8>)
+2014-10-11 21:00:52 - #<UNIXSocket:0x007ffc6bb22ef0>.recv_io:#<IO:0x007ffc2c51b410>(logged from #<RoCells::Trace::LastFrame:0x007ffc2c518300>)
+2014-10-11 21:00:52 - redirect $stdout to #<IO:0x007ffc2c51b410>(logged from #<RoCells::Trace::LastFrame:0x007ffc2c581a30>)
+2014-10-11 21:00:52 - handle request finish(logged from #<RoCells::Trace::LastFrame:0x007ffc2c7a03e8>)
+2014-10-11 21:00:53 - 
+
+
+2014-10-11 21:00:53 - kill 21712 at 2014-10-11 21:00:53 +0800(logged from #<RoCells::Trace::LastFrame:0x007ffc2c8362d0>)
+2014-10-11 21:39:30 - accept request #<UNIXSocket:0x007ffc6e4945b8>(logged from #<RoCells::Trace::LastFrame:0x007ffc6e49cb50>)
+2014-10-11 21:39:30 - #<UNIXSocket:0x007ffc6e4945b8>.recv_io:#<IO:0x007ffc6dc726c8>(logged from #<RoCells::Trace::LastFrame:0x007ffc6dc7c7e0>)
+2014-10-11 21:39:30 - redirect $stdout to #<IO:0x007ffc6dc726c8>(logged from #<RoCells::Trace::LastFrame:0x007ffc6e4aca00>)
+2014-10-11 21:39:31 - handle request finish(logged from #<RoCells::Trace::LastFrame:0x007ffc2c6fec28>)
+2014-10-11 21:39:31 - 
+
+
+2014-10-11 21:39:31 - kill 25492 at 2014-10-11 21:39:31 +0800(logged from #<RoCells::Trace::LastFrame:0x007ffc2c7a2c88>)
+2014-10-11 21:39:40 - accept request #<UNIXSocket:0x007ffc6dd63b40>(logged from #<RoCells::Trace::LastFrame:0x007ffc6dd59a28>)
+2014-10-11 21:39:40 - #<UNIXSocket:0x007ffc6dd63b40>.recv_io:#<IO:0x007ffc2c4ba1d8>(logged from #<RoCells::Trace::LastFrame:0x007ffc2c4c2568>)
+2014-10-11 21:39:40 - redirect $stdout to #<IO:0x007ffc2c4ba1d8>(logged from #<RoCells::Trace::LastFrame:0x007ffc2c1b7b48>)
+2014-10-11 21:39:40 - handle request finish(logged from #<RoCells::Trace::LastFrame:0x007ffc2c7747e8>)
+2014-10-11 21:39:40 - 
+
+
+2014-10-11 21:39:40 - kill 25651 at 2014-10-11 21:39:40 +0800(logged from #<RoCells::Trace::LastFrame:0x007ffc2c82b060>)
+2014-10-11 22:25:18 - #<UNIXSocket:0x007f51fc51f8d8>.recv_io:#<IO:0x007f51ec085a58>(logged from #<RoCells::Trace::LastFrame:0x007f51d822bbc8>)
+2014-10-11 22:25:18 - redirect $stdout to #<IO:0x007f51ec085a58>(logged from #<RoCells::Trace::LastFrame:0x007f51ec08c588>)
+2014-10-11 22:25:18 - handle request finish(logged from #<RoCells::Trace::LastFrame:0x007f5200439730>)
+2014-10-11 22:25:18 - 
+
+
+2014-10-11 22:25:18 - kill 677 at 2014-10-11 22:25:18 +0800(logged from #<RoCells::Trace::LastFrame:0x007f520051e1a0>)
+2014-10-11 22:30:35 - accept request #<UNIXSocket:0x007f51fcd6d738>(logged from #<RoCells::Trace::LastFrame:0x007f51fcd76130>)
+2014-10-11 22:30:36 - #<UNIXSocket:0x007f51fcd6d738>.recv_io:#<IO:0x007f51bc4c4590>(logged from #<RoCells::Trace::LastFrame:0x007f51bc4ce400>)
+2014-10-11 22:30:36 - redirect $stdout to #<IO:0x007f51bc4c4590>(logged from #<RoCells::Trace::LastFrame:0x007f51bc501698>)
+2014-10-11 22:30:39 - handle request finish(logged from #<RoCells::Trace::LastFrame:0x007f51fe63e7a8>)
+2014-10-11 22:30:39 - 
+
+
+2014-10-11 22:30:39 - kill 1287 at 2014-10-11 22:30:39 +0800(logged from #<RoCells::Trace::LastFrame:0x007f51fea221f8>)

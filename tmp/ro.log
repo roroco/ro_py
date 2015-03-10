@@ -1,0 +1,4009 @@
+class TestRoTrace(ro_unittest.TestCase):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    def setUp(self, *args, **kwargs):
+
+
+
+
+
+
+
+        self.o = ro.cells.ro_trace.RoTrace() ---- bash.rb:143
+
+
+
+
+
+
+
+2014-10-11 22:32:36 - 22:32:36: write    /home/roroco/Dropbox/py-projs/tests/ro/ro/cells/test_ro_trace.py  ---- py_test_file.rb:17
+
+
+
+
+
+
+
+2014-10-11 22:35:37 - 22:35:37: RoHelpers.autoload :RoErrsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_errs_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:37 - 22:35:37: RoHelpers.autoload :ShortcutsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/shortcuts_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:37 - 22:35:37: RoHelpers.autoload :Resolve, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/resolve.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:37 - 22:35:37: RoHelpers.autoload :Redis, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/redis.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:37 - 22:35:37: RoHelpers.autoload :Platform, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/platform.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:37 - 22:35:37: RoHelpers.autoload :ThdHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/thd_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:37 - 22:35:37: RoHelpers.autoload :AbstractHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/abstract_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:37: RoHelpers.autoload :RoBinHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_bin_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :Hook, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/hook.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :RoCmds, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :Meta, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/meta.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :RoCmdsFiles, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :CmdsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/cmds_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :Misc, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/misc.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :Find, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/find.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: warning  can't find ro_cmds dir in cur dir:/home/roroco/Dropbox/py-projs/ro ---- ro_cmds_files.rb:31
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :MetaPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/meta_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :MiscPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/misc_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :CurStatus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cur_status.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :Template, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/template.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :Context, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/context.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoHelpers.autoload :CfgHelper, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cfg_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Spork, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/spork.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Process, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/process.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :RoParser, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_parser.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Regexp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/regexp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :PreloadApp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/preload_app.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :SinatraCrawler, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/sinatra_crawler.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :RubymineShortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :RoCellMeths, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_cell_meths.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/sess_attrs.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file_dir_helper.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/process.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/basic.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/resolve.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/dir.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/ruby_eval.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/compress.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/scp.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::SessAttrs)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::Scp)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::RubyEval)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::Basic)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::FileDirHelper)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::Process)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::Resolve)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::Dir)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::Compress)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells::Rmt.send(:include, RoHelpers::Rmt::File)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Gem, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/gem.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Kls, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/kls.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Uniq, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/uniq.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Rspec, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/rspec.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :OpenStruct, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Thd, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/thd.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :KeySearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/key_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :AbstractCollMgr, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_coll_mgr.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Assertor, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/assertor.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Lambda, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/lambda.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Path, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/path.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :OpenStructColl, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct_coll.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Win, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Trace, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/trace.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Shortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Search, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :ValSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/val_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :AbstractSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :Try, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/try.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :CurWin, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/cur_win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :SearchedCell, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/searched_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/file_struct.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/ideavim.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:35:38 - 22:35:38: RoCells.autoload :HacgCell, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/hacg_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:38: RoCells.autoload :AbstractHttp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/abstract_http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :Http, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :Rsp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/rsp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :Noko, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/noko.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :ApiCaller, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/api_caller.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :TmpServer, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/tmp_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :RoCrawlerBin, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/ro_crawler_bin.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :Curl, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/curl.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :Forker, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/forker.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :Spawner, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/spawner.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :UnixServer, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :UnixSocket, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_socket.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoHelpers.autoload :ProcessHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/process_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoHelpers.autoload :SendToServerHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/send_to_server_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoHelpers.autoload :TmpFiles, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/tmp_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: RoCells.autoload :Rmt, /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_cells/rmt.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:35:39 - 22:35:39: ARGV:["r4py_gen", "test_file", "ro_try", "force:true"] ---- ro_cmds_runner.rb:17
+
+
+
+
+
+
+
+2014-10-11 22:35:40 - 22:35:40: template force?:true from py/test_helper to /home/roroco/Dropbox/py-projs/py-projs/test_helper.py in r4py_gen.rb:21  ---- template.rb:49
+
+
+
+
+
+
+
+2014-10-11 22:35:40 - 22:35:40: read     /home/roroco/Dropbox/rb-projs/ro_r4py/lib/templates/py/test_helper.erb  ---- template.rb:98
+
+
+
+
+
+
+
+2014-10-11 22:35:40 - 22:35:40: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:101
+
+
+
+
+
+
+
+2014-10-11 22:35:40 - 22:35:40: read     /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:117
+
+
+
+
+
+
+
+2014-10-11 22:35:40 - 22:35:40: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:128
+
+
+
+
+
+
+
+2014-10-11 22:35:40 - 22:35:40: mkdir    specs       ---- test_file.rb:46
+
+
+
+
+
+
+
+2014-10-11 22:36:06 - 22:36:06: rescue Interrupt ---- ro_cmds_runner.rb:36
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :RoErrsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_errs_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :ShortcutsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/shortcuts_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :Resolve, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/resolve.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :Redis, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/redis.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :Platform, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/platform.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :ThdHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/thd_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :AbstractHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/abstract_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :RoBinHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_bin_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :Hook, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/hook.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :RoCmds, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :Meta, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/meta.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :RoCmdsFiles, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :CmdsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/cmds_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :Misc, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/misc.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:08 - 22:36:08: RoHelpers.autoload :Find, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/find.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: warning  can't find ro_cmds dir in cur dir:/home/roroco/Dropbox/py-projs/ro ---- ro_cmds_files.rb:31
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoHelpers.autoload :MetaPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/meta_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoHelpers.autoload :MiscPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/misc_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoHelpers.autoload :CurStatus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cur_status.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoHelpers.autoload :Template, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/template.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoHelpers.autoload :Context, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/context.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoHelpers.autoload :CfgHelper, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cfg_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Spork, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/spork.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Process, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/process.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :RoParser, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_parser.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Regexp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/regexp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :PreloadApp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/preload_app.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :SinatraCrawler, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/sinatra_crawler.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :RubymineShortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :RoCellMeths, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_cell_meths.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/sess_attrs.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file_dir_helper.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/process.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/basic.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/resolve.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/dir.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/ruby_eval.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/compress.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/scp.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::SessAttrs)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::Scp)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::RubyEval)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::Basic)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::FileDirHelper)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::Process)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::Resolve)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::Dir)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::Compress)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells::Rmt.send(:include, RoHelpers::Rmt::File)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Gem, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/gem.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Kls, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/kls.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Uniq, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/uniq.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Rspec, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/rspec.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :OpenStruct, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Thd, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/thd.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :KeySearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/key_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :AbstractCollMgr, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_coll_mgr.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Assertor, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/assertor.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Lambda, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/lambda.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Path, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/path.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :OpenStructColl, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct_coll.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Win, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Trace, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/trace.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Shortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Search, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :ValSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/val_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :AbstractSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :Try, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/try.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :CurWin, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/cur_win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: RoCells.autoload :SearchedCell, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/searched_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/file_struct.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:09 - 22:36:09: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/ideavim.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :HacgCell, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/hacg_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :AbstractHttp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/abstract_http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :Http, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :Rsp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/rsp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :Noko, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/noko.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :ApiCaller, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/api_caller.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :TmpServer, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/tmp_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :RoCrawlerBin, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/ro_crawler_bin.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:10 - 22:36:10: RoCells.autoload :Curl, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/curl.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoCells.autoload :Forker, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/forker.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoCells.autoload :Spawner, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/spawner.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoCells.autoload :UnixServer, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoCells.autoload :UnixSocket, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_socket.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoHelpers.autoload :ProcessHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/process_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoHelpers.autoload :SendToServerHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/send_to_server_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoHelpers.autoload :TmpFiles, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/tmp_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: RoCells.autoload :Rmt, /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_cells/rmt.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:11 - 22:36:11: ARGV:["r4py_gen", "test_file", "ro_try", "force:true"] ---- ro_cmds_runner.rb:17
+
+
+
+
+
+
+
+2014-10-11 22:36:12 - 22:36:12: template force?:true from py/test_helper to /home/roroco/Dropbox/py-projs/py-projs/test_helper.py in r4py_gen.rb:21  ---- template.rb:49
+
+
+
+
+
+
+
+2014-10-11 22:36:12 - 22:36:12: read     /home/roroco/Dropbox/rb-projs/ro_r4py/lib/templates/py/test_helper.erb  ---- template.rb:98
+
+
+
+
+
+
+
+2014-10-11 22:36:12 - 22:36:12: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:101
+
+
+
+
+
+
+
+2014-10-11 22:36:12 - 22:36:12: read     /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:117
+
+
+
+
+
+
+
+2014-10-11 22:36:12 - 22:36:12: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:128
+
+
+
+
+
+
+
+2014-10-11 22:36:12 - 22:36:12: mkdir    specs       ---- test_file.rb:46
+
+
+
+
+
+
+
+2014-10-11 22:36:45 - 22:36:45: rescue Interrupt ---- ro_cmds_runner.rb:36
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :RoErrsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_errs_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :ShortcutsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/shortcuts_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :Resolve, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/resolve.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :Redis, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/redis.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :Platform, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/platform.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :ThdHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/thd_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :AbstractHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/abstract_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :RoBinHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_bin_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :Hook, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/hook.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :RoCmds, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :Meta, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/meta.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :RoCmdsFiles, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :CmdsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/cmds_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :Misc, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/misc.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: RoHelpers.autoload :Find, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/find.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:48 - 22:36:48: warning  can't find ro_cmds dir in cur dir:/home/roroco/Dropbox/py-projs/ro ---- ro_cmds_files.rb:31
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoHelpers.autoload :MetaPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/meta_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoHelpers.autoload :MiscPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/misc_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoHelpers.autoload :CurStatus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cur_status.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoHelpers.autoload :Template, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/template.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoHelpers.autoload :Context, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/context.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoHelpers.autoload :CfgHelper, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cfg_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Spork, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/spork.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Process, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/process.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :RoParser, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_parser.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Regexp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/regexp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :PreloadApp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/preload_app.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :SinatraCrawler, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/sinatra_crawler.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :RubymineShortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :RoCellMeths, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_cell_meths.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/sess_attrs.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file_dir_helper.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/process.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/basic.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/resolve.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/dir.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/ruby_eval.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/compress.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/scp.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::SessAttrs)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::Scp)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::RubyEval)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::Basic)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::FileDirHelper)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::Process)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::Resolve)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::Dir)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::Compress)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells::Rmt.send(:include, RoHelpers::Rmt::File)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Gem, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/gem.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Kls, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/kls.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Uniq, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/uniq.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Rspec, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/rspec.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :OpenStruct, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Thd, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/thd.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :KeySearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/key_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :AbstractCollMgr, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_coll_mgr.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Assertor, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/assertor.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Lambda, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/lambda.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Path, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/path.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :OpenStructColl, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct_coll.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Win, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Trace, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/trace.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Shortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Search, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :ValSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/val_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :AbstractSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Try, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/try.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :CurWin, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/cur_win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :SearchedCell, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/searched_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/file_struct.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/ideavim.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :HacgCell, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/hacg_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :AbstractHttp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/abstract_http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Http, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Rsp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/rsp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Noko, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/noko.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :ApiCaller, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/api_caller.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :TmpServer, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/tmp_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :RoCrawlerBin, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/ro_crawler_bin.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:49 - 22:36:49: RoCells.autoload :Curl, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/curl.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoCells.autoload :Forker, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/forker.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoCells.autoload :Spawner, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/spawner.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoCells.autoload :UnixServer, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoCells.autoload :UnixSocket, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_socket.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoHelpers.autoload :ProcessHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/process_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoHelpers.autoload :SendToServerHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/send_to_server_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoHelpers.autoload :TmpFiles, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/tmp_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:50 - 22:36:50: RoCells.autoload :Rmt, /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_cells/rmt.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:36:51 - 22:36:51: ARGV:["r4py_gen", "test_file", "ro_try", "force:true"] ---- ro_cmds_runner.rb:17
+
+
+
+
+
+
+
+2014-10-11 22:36:51 - 22:36:51: template force?:true from py/test_helper to /home/roroco/Dropbox/py-projs/py-projs/test_helper.py in r4py_gen.rb:21  ---- template.rb:49
+
+
+
+
+
+
+
+2014-10-11 22:36:51 - 22:36:51: read     /home/roroco/Dropbox/rb-projs/ro_r4py/lib/templates/py/test_helper.erb  ---- template.rb:98
+
+
+
+
+
+
+
+2014-10-11 22:36:51 - 22:36:51: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:101
+
+
+
+
+
+
+
+2014-10-11 22:36:51 - 22:36:51: read     /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:117
+
+
+
+
+
+
+
+2014-10-11 22:36:51 - 22:36:51: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:128
+
+
+
+
+
+
+
+2014-10-11 22:36:51 - 22:36:51: mkdir    specs       ---- test_file.rb:46
+
+
+
+
+
+
+
+2014-10-11 22:37:10 - 22:37:10: rescue Interrupt ---- ro_cmds_runner.rb:36
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :RoErrsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_errs_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :ShortcutsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/shortcuts_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :Resolve, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/resolve.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :Redis, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/redis.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :Platform, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/platform.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :ThdHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/thd_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :AbstractHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/abstract_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :RoBinHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_bin_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :Hook, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/hook.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :RoCmds, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :Meta, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/meta.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :RoCmdsFiles, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :CmdsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/cmds_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :Misc, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/misc.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :Find, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/find.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: warning  can't find ro_cmds dir in cur dir:/home/roroco/Dropbox/py-projs/ro ---- ro_cmds_files.rb:31
+
+
+
+
+
+
+
+2014-10-11 22:37:45 - 22:37:45: RoHelpers.autoload :MetaPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/meta_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:45: RoHelpers.autoload :MiscPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/misc_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoHelpers.autoload :CurStatus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cur_status.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoHelpers.autoload :Template, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/template.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoHelpers.autoload :Context, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/context.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoHelpers.autoload :CfgHelper, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cfg_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Spork, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/spork.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Process, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/process.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :RoParser, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_parser.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Regexp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/regexp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :PreloadApp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/preload_app.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :SinatraCrawler, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/sinatra_crawler.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :RubymineShortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :RoCellMeths, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_cell_meths.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/sess_attrs.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file_dir_helper.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/process.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/basic.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/resolve.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/dir.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/ruby_eval.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/compress.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/scp.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::SessAttrs)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::Scp)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::RubyEval)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::Basic)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::FileDirHelper)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::Process)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::Resolve)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::Dir)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::Compress)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells::Rmt.send(:include, RoHelpers::Rmt::File)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Gem, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/gem.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Kls, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/kls.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Uniq, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/uniq.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Rspec, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/rspec.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :OpenStruct, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Thd, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/thd.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :KeySearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/key_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :AbstractCollMgr, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_coll_mgr.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Assertor, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/assertor.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Lambda, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/lambda.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Path, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/path.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :OpenStructColl, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct_coll.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Win, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Trace, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/trace.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Shortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Search, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :ValSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/val_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :AbstractSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Try, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/try.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :CurWin, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/cur_win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :SearchedCell, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/searched_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/file_struct.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/ideavim.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :HacgCell, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/hacg_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :AbstractHttp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/abstract_http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Http, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Rsp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/rsp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :Noko, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/noko.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :ApiCaller, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/api_caller.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:46 - 22:37:46: RoCells.autoload :TmpServer, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/tmp_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:47 - 22:37:47: RoCells.autoload :RoCrawlerBin, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/ro_crawler_bin.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:47 - 22:37:47: RoCells.autoload :Curl, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/curl.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoCells.autoload :Forker, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/forker.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoCells.autoload :Spawner, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/spawner.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoCells.autoload :UnixServer, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoCells.autoload :UnixSocket, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_socket.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoHelpers.autoload :ProcessHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/process_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoHelpers.autoload :SendToServerHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/send_to_server_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoHelpers.autoload :TmpFiles, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/tmp_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: RoCells.autoload :Rmt, /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_cells/rmt.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:48 - 22:37:48: ARGV:["r4py_gen", "test_file", "ro_try", "force:true"] ---- ro_cmds_runner.rb:17
+
+
+
+
+
+
+
+2014-10-11 22:37:49 - 22:37:49: template force?:true from py/test_helper to /home/roroco/Dropbox/py-projs/py-projs/test_helper.py in r4py_gen.rb:21  ---- template.rb:49
+
+
+
+
+
+
+
+2014-10-11 22:37:49 - 22:37:49: read     /home/roroco/Dropbox/rb-projs/ro_r4py/lib/templates/py/test_helper.erb  ---- template.rb:98
+
+
+
+
+
+
+
+2014-10-11 22:37:49 - 22:37:49: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:101
+
+
+
+
+
+
+
+2014-10-11 22:37:49 - 22:37:49: read     /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:117
+
+
+
+
+
+
+
+2014-10-11 22:37:49 - 22:37:49: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:128
+
+
+
+
+
+
+
+2014-10-11 22:37:49 - 22:37:49: mkdir    specs       ---- test_file.rb:46
+
+
+
+
+
+
+
+2014-10-11 22:37:54 - 22:37:54: rescue Interrupt ---- ro_cmds_runner.rb:36
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :RoErrsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_errs_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :ShortcutsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/shortcuts_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :Resolve, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/resolve.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :Redis, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/redis.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :Platform, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/platform.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :ThdHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/thd_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :AbstractHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/abstract_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :RoBinHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_bin_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :Hook, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/hook.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :RoCmds, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :Meta, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/meta.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :RoCmdsFiles, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/ro_cmds_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :CmdsHelper, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/cmds_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :Misc, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/misc.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: RoHelpers.autoload :Find, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_helpers/find.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:56 - 22:37:56: warning  can't find ro_cmds dir in cur dir:/home/roroco/Dropbox/py-projs/ro ---- ro_cmds_files.rb:31
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:56: RoHelpers.autoload :MetaPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/meta_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoHelpers.autoload :MiscPlus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/misc_plus.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoHelpers.autoload :CurStatus, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cur_status.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoHelpers.autoload :Template, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/template.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoHelpers.autoload :Context, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/context.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoHelpers.autoload :CfgHelper, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_helpers/cfg_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Spork, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/spork.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Process, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/process.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :RoParser, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_parser.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Regexp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/regexp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :PreloadApp, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/preload_app.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :SinatraCrawler, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/sinatra_crawler.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :RubymineShortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :RoCellMeths, /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/ro_cell_meths.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/sess_attrs.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file_dir_helper.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/process.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/basic.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/resolve.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/dir.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/ruby_eval.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/compress.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/file.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_helpers/rmt/scp.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::SessAttrs)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::Scp)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::RubyEval)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::Basic)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::FileDirHelper)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::Process)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::Resolve)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::Dir)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::Compress)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells::Rmt.send(:include, RoHelpers::Rmt::File)    ---- meta.rb:78
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Gem, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/gem.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Kls, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/kls.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Uniq, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/uniq.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Rspec, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/rspec.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :OpenStruct, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Thd, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/thd.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :KeySearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/key_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :AbstractCollMgr, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_coll_mgr.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Assertor, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/assertor.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Lambda, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/lambda.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Path, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/path.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :OpenStructColl, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/open_struct_coll.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Win, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Trace, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/trace.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Shortcuts, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/shortcuts.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Search, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :ValSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/val_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :AbstractSearch, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/abstract_search.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Try, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/try.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :CurWin, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/cur_win.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :SearchedCell, /home/roroco/Dropbox/rb-projs/ro_cmds/lib/ro_cells/searched_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/file_struct.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: require  /home/roroco/Dropbox/rb-projs/ro_cmds_plus/lib/ro_cells/rubymine_shortcuts_cells/ideavim.rb ---- require_autoload.rb:66
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :HacgCell, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/hacg_cell.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :AbstractHttp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/abstract_http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Http, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/http.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Rsp, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/rsp.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Noko, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/noko.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :ApiCaller, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/api_caller.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :TmpServer, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/tmp_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :RoCrawlerBin, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/ro_crawler_bin.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:57 - 22:37:57: RoCells.autoload :Curl, /home/roroco/Dropbox/rb-projs/ro_crawler/lib/ro_cells/curl.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoCells.autoload :Forker, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/forker.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoCells.autoload :Spawner, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/spawner.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoCells.autoload :UnixServer, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_server.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoCells.autoload :UnixSocket, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_cells/unix_socket.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoHelpers.autoload :ProcessHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/process_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoHelpers.autoload :SendToServerHelper, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/send_to_server_helper.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoHelpers.autoload :TmpFiles, /home/roroco/Dropbox/rb-projs/ro_preload/lib/ro_helpers/tmp_files.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: RoCells.autoload :Rmt, /home/roroco/Dropbox/rb-projs/ro_rmt/lib/ro_cells/rmt.rb ---- require_autoload.rb:167
+
+
+
+
+
+
+
+2014-10-11 22:37:58 - 22:37:58: ARGV:["r4py_gen", "test_file", "ro_try", "force:true"] ---- ro_cmds_runner.rb:17
+
+
+
+
+
+
+
+2014-10-11 22:37:59 - 22:37:59: template force?:true from py/test_helper to /home/roroco/Dropbox/py-projs/py-projs/test_helper.py in r4py_gen.rb:21  ---- template.rb:49
+
+
+
+
+
+
+
+2014-10-11 22:37:59 - 22:37:59: read     /home/roroco/Dropbox/rb-projs/ro_r4py/lib/templates/py/test_helper.erb  ---- template.rb:98
+
+
+
+
+
+
+
+2014-10-11 22:37:59 - 22:37:59: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:101
+
+
+
+
+
+
+
+2014-10-11 22:37:59 - 22:37:59: read     /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:117
+
+
+
+
+
+
+
+2014-10-11 22:37:59 - 22:37:59: write    /home/roroco/Dropbox/py-projs/py-projs/test_helper.py  ---- template.rb:128
+
+
+
+
+
+
+
+2014-10-11 22:37:59 - 22:37:59: mkdir    specs       ---- test_file.rb:46
+
+
+
+
+
+
+
+2014-10-11 22:41:59 - 22:41:59: rescue #<Interrupt:  /home/roroco/Dropbox/py-projs> ---- ro_cmds_runner.rb:36
+
+
+
+
+
+
+
+2014-10-11 22:41:59 - 22:41:59: #<RoCells::Trace::LastFrame:0x007faba25e6280> ---- ro_cmds_runner.rb:37
+
+
+
+2015-03-10 21:33:37 - 21:33:37: running  'git init'           ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+
+
+
+2015-03-10 21:33:37 - 21:33:37: Reinitialized existing shared Git repository in /home/roroco/Dropbox/pys/ro/.git/ ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+
+
+
+2015-03-10 21:33:37 - 21:33:37: running  'git remote remove origin' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+
+
+
+2015-03-10 21:33:37 - 21:33:37: running  'git remote add origin git@github.com:roroco/ro_py.git' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+
+
+
+2015-03-10 21:33:37 - 21:33:37:  ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+
+
+
+2015-03-10 21:33:37 - 21:33:37: running  'git push -u git@github.com:roroco/ro_py.git  master -f' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+
+2015-03-10 21:34:42 - 21:34:42: running  'git init'           ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+
+2015-03-10 21:34:42 - 21:34:42: Reinitialized existing shared Git repository in /home/roroco/Dropbox/pys/ro/.git/ ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+
+2015-03-10 21:34:42 - 21:34:42: running  'git remote remove origin' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+
+2015-03-10 21:34:42 - 21:34:42:  ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+
+2015-03-10 21:34:42 - 21:34:42: running  'git remote add origin git@github.com:roroco/ro_py.git' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+
+2015-03-10 21:34:42 - 21:34:42:  ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+
+2015-03-10 21:34:42 - 21:34:42: running  'cd /home/roroco/Dropbox/pys/ro/; git push -u git@github.com:roroco/ro_py.git  master -f' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+2015-03-10 21:38:29 - 21:38:29: running  'git init'           ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+2015-03-10 21:38:29 - 21:38:29: Reinitialized existing shared Git repository in /home/roroco/Dropbox/pys/ro/.git/ ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+2015-03-10 21:38:29 - 21:38:29: running  'git remote remove origin' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+2015-03-10 21:38:29 - 21:38:29:  ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+2015-03-10 21:38:29 - 21:38:29: running  'git remote add origin git@github.com:roroco/ro_py.git' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+2015-03-10 21:38:29 - 21:38:29:  ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+2015-03-10 21:38:29 - 21:38:29: running  'cd /home/roroco/Dropbox/pys/ro/; git push -u git@github.com:roroco/ro_py.git  master -f' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+2015-03-10 21:38:33 - 21:38:33: running  'cd /home/roroco/Dropbox/pys/ro; git init' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
+2015-03-10 21:38:33 - 21:38:33: Reinitialized existing shared Git repository in /home/roroco/Dropbox/pys/ro/.git/ ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:149 in `_sh'
+2015-03-10 21:38:33 - 21:38:33: running  'cd /home/roroco/Dropbox/pys/ro; rm -f `pwd`/.git/index.lock; git add --all; git commit -am 'source is modified by ro_code at 2015-03-10 21:38:33 +0800'' ---- /home/roroco/Dropbox/rbs/ro_cmds/lib/sh.rb:120 in `_sh'
